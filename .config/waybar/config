@@ -2,7 +2,7 @@
     "height": 24, // Waybar height (to be removed for auto height)
     "modules-left": ["niri/workspaces"],
     "modules-center": ["niri/window"],
-    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "tray", "notifications", "clock"],
+    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "tray", "clock"],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -110,19 +110,6 @@
         "on-click": "pavucontrol",
         "on-click-right": "foot -a pw-top pw-top"
     },
-  "notifications": {
-    "format": "<span size='16pt'>{icon}</span>",
-    "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂜",
-      "dnd-notification": "󰂠",
-      "dnd-none": "󰪓",
-      "inhibited-notification": "󰂛",
-      "inhibited-none": "󰪑",
-      "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰪑"
-    }
-  },
 "mpris": {
     "format": "🎵 {artist}-{title}",         // 재생 중일 때 (기본)
     "format-paused": "🎵⏸️ ",       // 일시정지 상태일 때

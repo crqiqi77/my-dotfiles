@@ -1,0 +1,17 @@
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+size = 12.0
+# 可选：设置粗体、斜体
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+# 字体渲染优化（Linux 推荐）
+[font.glyph_offset]
+x = 0
+y = 0
+[font.offset]
+x = 0
+y = 0
+[window]
+# 背景不透明度 (0.0 完全透明 ~ 1.0 完全不透明)
+opacity = 0.60
+blur = true

@@ -271,7 +271,8 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5"
 spawn-at-startup "mako"
-spawn-at-startup "swaybg" "-i" "/home/cr/Pictures/wallpaper/bizhihui_com_202512241766550888807602.jpg" "-m" "fill"
+spawn-at-startup "swaybg" "-i" "/home/cr/Pictures/wallpaper/anders-jilden-cYrMQA7a3Wc-unsplash.jpg" "-m" "fill"
+spawn-at-startup "mako"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"

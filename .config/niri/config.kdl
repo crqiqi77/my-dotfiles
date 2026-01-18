@@ -273,6 +273,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "fcitx5"
 spawn-at-startup "mako"
 spawn-at-startup "swaybg" "-i" "/home/cr/Pictures/wallpaper/anders-jilden-cYrMQA7a3Wc-unsplash.jpg" "-m" "fill"
+spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -370,6 +371,7 @@ binds {
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+A hotkey-overlay-title="Screenshot translation" { spawn-sh "grim -g \"$(slurp)\" ~/.cache/com.pot-app.desktop/pot_screenshot_cut.png && curl \"127.0.0.1:60828/ocr_recognize?screenshot=false\""; }
+    Mod+Alt+V hotkey-overlay-title="shear plate" { spawn-sh "cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"; }
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.

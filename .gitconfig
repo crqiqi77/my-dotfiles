@@ -1,3 +1,7 @@
 [user]
 	email = crqiqi77@qq.com
 	name = crqiqi77
+[http]
+	proxy = http://127.0.0.1:7890
+[https]
+	proxy = https://127.0.0.1:7890

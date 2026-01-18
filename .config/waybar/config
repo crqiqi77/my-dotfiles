@@ -2,7 +2,8 @@
     "height": 24, // Waybar height (to be removed for auto height)
     "modules-left": ["niri/workspaces"],
     "modules-center": ["niri/window"],
-    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "tray", "clock"],
+    //"modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "tray", "clock"],
+    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "clock"],
     "keyboard-state": {
         "numlock": true,
         "capslock": true,

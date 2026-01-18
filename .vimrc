@@ -8,6 +8,10 @@ set laststatus=2
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
 set list
 set listchars=tab:→\ ,trail:·
+if has("autocmd")
+	au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+	\| exe "normal! g'\"" | endif
+endif
 
 call plug#begin('~/.vim/plugged')
 " 状态栏 & 标签栏增强

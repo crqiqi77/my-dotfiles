@@ -3,16 +3,7 @@
     "modules-left": ["niri/workspaces"],
     "modules-center": ["niri/window"],
     //"modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "tray", "clock"],
-    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "clock"],
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
+    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "tray", "clock"],
     "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },

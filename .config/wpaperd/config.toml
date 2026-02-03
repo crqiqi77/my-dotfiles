@@ -1,0 +1,8 @@
+[default]
+duration = "40m"
+mode = "center"
+sorting = "random"
+
+[any]
+path = "/home/cr/Pictures/wallpaper"
+

@@ -272,7 +272,7 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "fcitx5"
 spawn-at-startup "mako"
-spawn-at-startup "swaybg" "-i" "/home/cr/Pictures/wallpaper/anders-jilden-cYrMQA7a3Wc-unsplash.jpg" "-m" "fill"
+spawn-at-startup "wpaperd"
 spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "swayidle" "-w" "timeout" "601" "niri msg action power-off-monitors" "timeout" "600" "swaylock -f" "before-sleep" "swaylock -f"
 spawn-at-startup "clangd"

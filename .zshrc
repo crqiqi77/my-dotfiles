@@ -116,7 +116,9 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # 为 curl wget git 等设置代理
-proxy () {
-  export ALL_PROXY="socks5://127.0.0.1:7891"
-  export all_proxy="socks5://127.0.0.1:7891"
-}
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+export all_proxy="socks5://127.0.0.1:7890"
+
+# opencode
+export PATH=/home/cr/.opencode/bin:$PATH

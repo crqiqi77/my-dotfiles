@@ -1,72 +1,17 @@
 {
-    "height": 24, // Waybar height (to be removed for auto height)
+    "height": 24,
     "modules-left": ["niri/workspaces"],
     "modules-center": ["niri/window"],
-    //"modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "keyboard-state", "tray", "clock"],
-    "modules-right": ["mpris", "idle_inhibitor", "temperature", "cpu", "memory","network", "pulseaudio", "tray", "clock"],
-    "hyprland/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "hyprland/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
-    },
-    "mpd": {
-//        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-        "format": "  {title} - {artist} {stateIcon} [{elapsedTime:%M:%S}/{totalTime:%M:%S}] {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}[{songPosition}/{queueLength}] [{volume}%]",
-        "format-disconnected": " Disconnected",
-        "format-stopped": " {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped",
-        "unknown-tag": "N/A",
-        "interval": 2,
-        "consume-icons": {
-            "on": " "
-        },
-        "random-icons": {
-//            "off": "<span color=\"#f53c3c\"></span> ",
-            "on": " "
-        },
-        "repeat-icons": {
-            "on": " "
-        },
-        "single-icons": {
-            "on": "1 "
-        },
-        "state-icons": {
-            "paused": "",
-            "playing": ""
-        },
-        "tooltip-format": "MPD (connected)",
-        "tooltip-format-disconnected": "MPD (disconnected)",
-        "on-click": "mpc toggle",
-        "on-click-right": "foot -a ncmpcpp ncmpcpp",
-        "on-scroll-up": "mpc volume +2",
-        "on-scroll-down": "mpc volume -2"
-
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
+    "modules-right": ["temperature", "cpu", "memory","network", "pulseaudio", "tray", "clock"],
     "tray": {
-        // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        //"format-alt": "{:%Y-%m-%d}"
-        //"format": "{:L%Y-%m-%d<small>[%a]</small> <tt><small>%p</small></tt>%I:%M}"
         "format": "{:%Y-%m-%d %H:%M}"
     },
     "cpu": {
-        "format": " {usage}%",
-//        "tooltip": false
+        "format": " {usage}%"
     },
     "memory": {
         "format": " {}%"
@@ -80,7 +25,6 @@
         "format-icons": ["", "", ""]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": " {ifname}",
         "tooltip-format": " {ifname} via {gwaddr}",
@@ -89,7 +33,7 @@
         "format-alt": " {ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
+        "scroll-step": 5,
         "format": "{icon} {volume}% {format_source}",
         "format-bluetooth": " {volume}% {format_source}",
         "format-bluetooth-muted": "  {format_source}",
@@ -101,12 +45,5 @@
         },
         "on-click": "pavucontrol",
         "on-click-right": "foot -a pw-top pw-top"
-    },
-"mpris": {
-    "format": "🎵 {artist}-{title}",         // 재생 중일 때 (기본)
-    "format-paused": "🎵⏸️ ",       // 일시정지 상태일 때
-    "format-stopped": "🎵⏹️ ",           // 정지 상태일 때
-    "max-length": 40,
-    "on-click": "playerctl play-pause"
-}
+    }
 }

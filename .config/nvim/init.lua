@@ -151,6 +151,8 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		vim.keymap.set('n', 'gy', vim.lsp.buf.type_definition,
 			vim.tbl_extend('force', opts, { desc = '类型定义' }))
 
+			
+		vim.keymap.set('n', '<leader>ds', vim.lsp.buf.document_symbol, { desc = 'Document Symbols' })
 		-- ====================
 		-- 代码操作快捷键
 		-- ====================

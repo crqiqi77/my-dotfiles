@@ -1,0 +1,12 @@
+#!/bin/sh
+#clangd &
+#lua-language-server &
+#blueman-applet &  # 蓝牙托盘
+#mako &            # 通知守护进程
+#mihomo-party &    # 网络代理
+#hypridle &        # 空闲管理（锁屏/休眠）
+#hyprsunset &      # 色温调节
+#hyprpaper &       # 壁纸（如果不用swaybg/kwm startup_cmds）
+#~/.config/kwm/kwmblocks.sh /tmp/kwm-status.fifo &
+
+/home/cr/software/kwm/zig-out/bin/kwm
